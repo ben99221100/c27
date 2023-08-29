@@ -19,6 +19,8 @@ function checkKey(info) {
         isJumping = true
         player.classList.add("animate")
         setTimeout(endOfJump, 1000)
+        let jumpSound = new Audio("jump.wav")
+        jumpSound.play()
     }
 } 
 
@@ -49,6 +51,12 @@ function checkIfDead() {
             </center>
 
         `
+
+
+        let gameOverSound = new Audio("game-over.wav")
+        gameOverSound.play()   
+
+
     }
 }
 
